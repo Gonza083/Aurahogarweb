@@ -198,7 +198,7 @@ export default function IluminacionPremiumPage() {
                 <Button
                   size="lg"
                   className="bg-white text-aura-brown hover:bg-aura-cream px-8 font-semibold text-lg"
-                  onClick={() => window.open("https://www.instagram.com/aura_hogar_", "_blank")}
+                  onClick={() => window.open("https://www.instagram.com/aurahogaroficial", "_blank")}
                 >
                   <Instagram className="w-5 h-5 mr-2" />
                   Ver en Instagram
