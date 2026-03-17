@@ -26,6 +26,7 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 import Footer from "@/components/footer"
+import FadeIn from "@/components/fade-in"
 
 export default function AuraHogarLanding() {
   const scrollToSection = (sectionId: string) => {
@@ -133,6 +134,7 @@ export default function AuraHogarLanding() {
 
       {/* Services Section */}
       <section id="servicios" className="py-20 bg-aura-cream">
+        <FadeIn>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-aura-brown mb-4">Nuestros Servicios</h2>
@@ -215,10 +217,12 @@ export default function AuraHogarLanding() {
 
           {/* Services Details Section */}
         </div>
+        </FadeIn>
       </section>
 
       {/* Why Choose Us */}
       <section className="py-20 bg-white">
+        <FadeIn>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -328,10 +332,12 @@ export default function AuraHogarLanding() {
             </div>
           </div>
         </div>
+        </FadeIn>
       </section>
 
       {/* Our Process Section */}
       <section className="py-20 bg-aura-cream">
+        <FadeIn>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-aura-brown mb-4">Nuestro Proceso</h2>
@@ -431,10 +437,12 @@ export default function AuraHogarLanding() {
             </Button>
           </div>
         </div>
+        </FadeIn>
       </section>
 
       {/* Projects Preview */}
       <section id="proyectos" className="py-20 bg-white">
+        <FadeIn>
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
             <div>
@@ -520,10 +528,12 @@ export default function AuraHogarLanding() {
             </Link>
           </div>
         </div>
+        </FadeIn>
       </section>
 
       {/* CTA Section */}
       <section id="contacto" className="py-20 bg-gradient-to-r from-aura-tan to-aura-brown">
+        <FadeIn>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">¿Listo para automatizar tu hogar?</h2>
@@ -555,6 +565,7 @@ export default function AuraHogarLanding() {
             </div>
           </div>
         </div>
+        </FadeIn>
       </section>
 
       {/* Footer */}
