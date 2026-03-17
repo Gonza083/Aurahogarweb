@@ -89,6 +89,48 @@ export default function AuraHogarLanding() {
         </div>
       </section>
 
+      {/* Brands Section */}
+      <section className="py-12 bg-aura-cream border-y border-aura-tan/20 overflow-hidden">
+        <div className="container mx-auto px-4 mb-8 text-center">
+          <p className="text-sm font-semibold text-aura-tan uppercase tracking-widest">
+            Tecnología de primera línea
+          </p>
+        </div>
+        <div className="relative">
+          {/* Fade edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-aura-cream to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-aura-cream to-transparent z-10 pointer-events-none" />
+
+          <div className="flex animate-marquee whitespace-nowrap">
+            {[
+              { src: "/marcas/client-1.png", alt: "Hikvision", imgClass: "h-10" },
+              { src: "/marcas/client-2.png", alt: "World Leds Go", imgClass: "h-10" },
+              { src: "/marcas/client-3.png", alt: "Sophia", imgClass: "h-10" },
+              { src: "/marcas/client-4.png", alt: "Full Lock System", imgClass: "h-10" },
+              { src: "/marcas/client-5.png", alt: "Soul Hogares Inteligentes", imgClass: "h-16" },
+              { src: "/marcas/client-1.png", alt: "Hikvision", imgClass: "h-10" },
+              { src: "/marcas/client-2.png", alt: "World Leds Go", imgClass: "h-10" },
+              { src: "/marcas/client-3.png", alt: "Sophia", imgClass: "h-10" },
+              { src: "/marcas/client-4.png", alt: "Full Lock System", imgClass: "h-10" },
+              { src: "/marcas/client-5.png", alt: "Soul Hogares Inteligentes", imgClass: "h-16" },
+            ].map((brand, i) => (
+              <div
+                key={i}
+                className="inline-flex items-center justify-center mx-10 flex-shrink-0"
+              >
+                <Image
+                  src={brand.src}
+                  alt={brand.alt}
+                  width={140}
+                  height={56}
+                  className={`${brand.imgClass} w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="servicios" className="py-20 bg-aura-cream">
         <div className="container mx-auto px-4">
