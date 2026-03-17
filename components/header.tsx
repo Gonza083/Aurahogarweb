@@ -159,11 +159,7 @@ export default function Header() {
               )}
             </div>
             <Link
-              href="/#proyectos"
-              onClick={(e) => {
-                e.preventDefault()
-                handleNavLinkClick("proyectos")
-              }}
+              href="/proyectos"
               className="text-aura-brown hover:text-aura-tan transition-colors font-medium"
             >
               Proyectos
@@ -248,12 +244,9 @@ export default function Header() {
                 )}
               </div>
               <Link
-                href="/#proyectos"
+                href="/proyectos"
                 className="text-aura-brown hover:text-aura-tan transition-colors font-medium py-2"
-                onClick={(e) => {
-                  e.preventDefault()
-                  handleNavLinkClick("proyectos")
-                }}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Proyectos
               </Link>

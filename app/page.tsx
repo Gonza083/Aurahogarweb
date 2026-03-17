@@ -1,8 +1,8 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/header"
 import {
   Lightbulb,
@@ -391,134 +391,91 @@ export default function AuraHogarLanding() {
         </div>
       </section>
 
-      {/* Projects Gallery */}
+      {/* Projects Preview */}
       <section id="proyectos" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-aura-brown mb-4">Nuestros Proyectos</h2>
-            <p className="text-xl text-aura-brown max-w-3xl mx-auto">
-              Conoce algunos de nuestros trabajos más destacados en Chajarí y la región
-            </p>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-aura-brown mb-3">Nuestros Proyectos</h2>
+              <p className="text-xl text-aura-brown max-w-2xl">
+                Trabajos reales, soluciones a medida. Conocé lo que hacemos en Chajarí y la región.
+              </p>
+            </div>
+            <Link
+              href="/proyectos"
+              className="inline-flex items-center gap-2 text-aura-tan hover:text-aura-brown font-semibold transition-colors whitespace-nowrap group"
+            >
+              Ver todos los proyectos
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
           </div>
 
-          {/* Proyectos Terminados */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-aura-brown mb-8 text-center">Proyectos Terminados</h3>
-            <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
-              <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-green-400 bg-green-50">
-                <div className="relative overflow-hidden">
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
+            {[
+              {
+                src: "/images/projects/casa-fd-chajari.jpg",
+                alt: "Casa Inteligente FD – Chajarí",
+                name: "Casa Inteligente FD",
+                status: "Finalizado",
+                statusColor: "bg-emerald-500/90 border-emerald-400/50",
+                tags: ["Domótica", "Seguridad", "Iluminación"],
+              },
+              {
+                src: "/images/projects/proyecto-ng.jpg",
+                alt: "Proyecto NG – Chajarí",
+                name: "Proyecto NG",
+                status: "En Ejecución",
+                statusColor: "bg-aura-tan/90 border-aura-tan/50",
+                tags: ["Domótica", "Redes", "Audio"],
+              },
+              {
+                src: "/images/projects/oficinas-inteligentes.jpg",
+                alt: "Oficinas Inteligentes – Chajarí",
+                name: "Oficinas Inteligentes",
+                status: "En Ejecución",
+                statusColor: "bg-aura-tan/90 border-aura-tan/50",
+                tags: ["Domótica", "Seguridad", "Acceso Digital"],
+              },
+            ].map((item) => (
+              <Link key={item.name} href="/proyectos" className="group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <div className="relative h-60 overflow-hidden">
                   <Image
-                    src="/images/projects/casa-fd-chajari.jpg"
-                    alt="Casa Inteligente FD - Chajarí"
-                    width={600}
-                    height={300}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-green-600 text-white">Terminado</Badge>
+                  <div className="absolute inset-0 bg-gradient-to-t from-aura-black/75 via-aura-black/10 to-transparent" />
+                  <div className="absolute top-3 right-3">
+                    <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold backdrop-blur-sm border text-white ${item.statusColor}`}>
+                      <span className="w-1.5 h-1.5 rounded-full bg-white/80" />
+                      {item.status}
+                    </span>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-white font-bold text-lg">{item.name}</p>
                   </div>
                 </div>
-                <CardContent className="p-8">
-                  <h4 className="text-2xl font-semibold text-aura-brown mb-3">Casa Inteligente FD – Chajarí</h4>
-                  <p className="text-aura-brown mb-6 text-lg">
-                    Vivienda 100% inteligente: control total de luces, cortinas, portones, cámaras, seguridad y
-                    climatización.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+                <div className="bg-white px-4 py-3 flex flex-wrap gap-1.5">
+                  {item.tags.map((tag) => (
+                    <span key={tag} className="text-xs font-medium px-2.5 py-1 rounded-full bg-aura-cream text-aura-brown border border-aura-tan/30">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </Link>
+            ))}
           </div>
 
-          {/* Proyectos en Ejecución */}
-          <div>
-            <h3 className="text-2xl font-bold text-aura-brown mb-8 text-center">Proyectos en Ejecución</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-              <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-aura-tan bg-aura-cream hover:border-aura-brown">
-                <div className="relative overflow-hidden">
-                  <Image
-                    src="/images/projects/proyecto-ng.jpg"
-                    alt="Proyecto NG - Chajarí"
-                    width={400}
-                    height={250}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-aura-tan text-white">En Ejecución</Badge>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-semibold text-aura-brown mb-3">Proyecto NG – Chajarí</h4>
-                  <p className="text-aura-brown mb-4">
-                    Una de las casas más modernas de la zona: domótica para pileta, riego, redes, iluminación,
-                    seguridad, audio, cortinas y más.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-aura-tan bg-aura-cream hover:border-aura-brown">
-                <div className="relative overflow-hidden">
-                  <Image
-                    src="/images/projects/oficinas-inteligentes.jpg"
-                    alt="Oficinas Inteligentes - Chajarí"
-                    width={400}
-                    height={250}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-aura-tan text-white">En Ejecución</Badge>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-semibold text-aura-brown mb-3">Oficinas Inteligentes – Chajarí</h4>
-                  <p className="text-aura-brown mb-4">
-                    Automatización integral de oficinas con control de iluminación, climatización, 7 portones,
-                    seguridad, acceso digital, cámaras, audio y más.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-aura-tan bg-aura-cream hover:border-aura-brown">
-                <div className="relative overflow-hidden">
-                  <Image
-                    src="/images/projects/proyecto-js.jpg"
-                    alt="Proyecto JS - Chajarí"
-                    width={400}
-                    height={250}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-aura-tan text-white">En Ejecución</Badge>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-semibold text-aura-brown mb-3">Proyecto JS – Chajarí</h4>
-                  <p className="text-aura-brown mb-4">
-                    Automatización de pileta, iluminación, cámaras, seguridad, aires, cortinas y portones.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-aura-tan bg-aura-cream hover:border-aura-brown">
-                <div className="relative overflow-hidden">
-                  <Image
-                    src="/images/projects/proyecto-jl.jpg"
-                    alt="Proyecto JL - Chajarí"
-                    width={400}
-                    height={250}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-aura-tan text-white">En Ejecución</Badge>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-semibold text-aura-brown mb-3">Proyecto JL – Chajarí</h4>
-                  <p className="text-aura-brown mb-4">
-                    Control inteligente de iluminación, seguridad, cámaras, aires y cortinas.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+          <div className="text-center">
+            <Link
+              href="/proyectos"
+              className="inline-flex items-center gap-2 bg-aura-tan hover:bg-aura-brown text-white font-semibold px-8 py-3 rounded-xl transition-colors shadow-md hover:shadow-lg"
+            >
+              Ver todos los proyectos
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
