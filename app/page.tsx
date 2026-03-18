@@ -136,86 +136,165 @@ export default function AuraHogarLanding() {
       <section id="servicios" className="py-20 bg-aura-cream">
         <FadeIn>
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-aura-brown mb-4">Nuestros Servicios</h2>
             <p className="text-xl text-aura-brown max-w-3xl mx-auto">
-              Ofrecemos soluciones integrales de automatización que se adaptan a tus necesidades
+              Soluciones integrales pensadas para transformar tu espacio
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <Link href="/servicios/casa-inteligente" className="block">
-              <Card className="group hover:shadow-xl transition-all duration-300 border-2 border-aura-tan hover:border-aura-brown hover:bg-white">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-aura-tan rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-aura-brown transition-colors">
-                    <Home className="w-8 h-8 text-white" />
+          {/* Asymmetric grid: 2/3 + 1/3 alternating */}
+          <div className="grid md:grid-cols-3 gap-4">
+
+            {/* Casa Inteligente — featured, 2/3 width */}
+            <Link
+              href="/servicios/casa-inteligente"
+              className="md:col-span-2 group relative rounded-2xl overflow-hidden h-80 md:h-[420px] flex flex-col justify-end"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-aura-slate to-aura-black">
+                {/* Replace src with real image when available */}
+                <Image
+                  src="/images/nuestros-servicios/casa-inteligente.jpg"
+                  alt="Casa Inteligente"
+                  fill
+                  className="object-cover opacity-60 group-hover:opacity-75 group-hover:scale-105 transition-all duration-700"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-aura-black/90 via-aura-black/20 to-transparent" />
+              <div className="relative p-7 md:p-8">
+                <span className="inline-block text-xs font-semibold text-aura-tan uppercase tracking-widest mb-3">
+                  Servicio principal
+                </span>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-aura-tan/20 border border-aura-tan/40 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Home className="w-5 h-5 text-aura-tan" />
                   </div>
-                  <h3 className="text-xl font-semibold text-aura-brown mb-4">Casa Inteligente</h3>
-                  <p className="text-aura-brown mb-6">
-                    Automatización completa: climatización, cortinas, audio, iluminación, pileta, riego, portones y más,
-                    todo integrado en un solo sistema.
-                  </p>
-                  <Button variant="ghost" className="text-aura-tan hover:text-aura-brown hover:bg-aura-cream">
-                    Saber más →
-                  </Button>
-                </CardContent>
-              </Card>
+                  <h3 className="text-white text-2xl md:text-3xl font-bold">Casa Inteligente</h3>
+                </div>
+                <p className="text-white/70 text-sm md:text-base mb-4 max-w-md leading-relaxed">
+                  Controlá más de 50 dispositivos desde tu celular: luces, cortinas, clima, portones, pileta y más, integrados en un solo sistema.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {["Sophia", "Soul Hogares"].map((b) => (
+                    <span key={b} className="text-xs font-medium px-2.5 py-1 rounded-full bg-white/10 text-white/80 border border-white/20 backdrop-blur-sm">
+                      {b}
+                    </span>
+                  ))}
+                </div>
+                <span className="inline-flex items-center gap-2 text-aura-tan font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+                  Conocer más <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
             </Link>
 
-            <Link href="/servicios/seguridad-monitoreo" className="block">
-              <Card className="group hover:shadow-xl transition-all duration-300 border-2 border-aura-tan hover:border-aura-brown hover:bg-white">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-aura-tan rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-aura-brown transition-colors">
-                    <Shield className="w-8 h-8 text-white" />
+            {/* Seguridad — 1/3 width */}
+            <Link
+              href="/servicios/seguridad-monitoreo"
+              className="group relative rounded-2xl overflow-hidden h-80 md:h-[420px] flex flex-col justify-end"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-950">
+                {/* Replace src with real image when available */}
+                <Image
+                  src="/images/nuestros-servicios/Seguridad.jpg"
+                  alt="Seguridad y Monitoreo"
+                  fill
+                  className="object-cover opacity-60 group-hover:opacity-75 group-hover:scale-105 transition-all duration-700"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-aura-black/90 via-aura-black/20 to-transparent" />
+              <div className="relative p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-9 h-9 bg-white/10 border border-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Shield className="w-4 h-4 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-aura-brown mb-4">Seguridad y Monitoreo</h3>
-                  <p className="text-aura-brown mb-6">
-                    Cámaras HD, sensores de alarma y cerraduras digitales para mantener tu hogar protegido las 24 horas.
-                  </p>
-                  <Button variant="ghost" className="text-aura-tan hover:text-aura-brown hover:bg-aura-cream">
-                    Saber más →
-                  </Button>
-                </CardContent>
-              </Card>
+                  <h3 className="text-white text-xl font-bold">Seguridad y Monitoreo</h3>
+                </div>
+                <p className="text-white/65 text-sm mb-4 leading-relaxed">
+                  Monitoreo 24/7 con cámaras HD, sensores y cerraduras digitales.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {["Hikvision", "Full Lock"].map((b) => (
+                    <span key={b} className="text-xs font-medium px-2.5 py-1 rounded-full bg-white/10 text-white/80 border border-white/20">
+                      {b}
+                    </span>
+                  ))}
+                </div>
+                <span className="inline-flex items-center gap-2 text-aura-tan font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+                  Conocer más <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
             </Link>
 
-            <Link href="/servicios/iluminacion-premium" className="block">
-              <Card className="group hover:shadow-xl transition-all duration-300 border-2 border-aura-tan hover:border-aura-brown hover:bg-white">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-aura-tan rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-aura-brown transition-colors">
-                    <Lightbulb className="w-8 h-8 text-white" />
+            {/* Iluminación — 1/3 width */}
+            <Link
+              href="/servicios/iluminacion-premium"
+              className="group relative rounded-2xl overflow-hidden h-80 md:h-[420px] flex flex-col justify-end"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-900 to-aura-black">
+                {/* Replace src with real image when available */}
+                <Image
+                  src="/images/nuestros-servicios/Iluminacion.png"
+                  alt="Iluminación Premium"
+                  fill
+                  className="object-cover opacity-60 group-hover:opacity-75 group-hover:scale-105 transition-all duration-700"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-aura-black/90 via-aura-black/20 to-transparent" />
+              <div className="relative p-6">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-9 h-9 bg-white/10 border border-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Lightbulb className="w-4 h-4 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-aura-brown mb-4">Iluminación Premium</h3>
-                  <p className="text-aura-brown mb-6">
-                    Diseño y venta de iluminación de alta calidad con la última tecnología en eficiencia energética y
-                    estilo.
-                  </p>
-                  <Button variant="ghost" className="text-aura-tan hover:text-aura-brown hover:bg-aura-cream">
-                    Saber más →
-                  </Button>
-                </CardContent>
-              </Card>
+                  <h3 className="text-white text-xl font-bold">Iluminación Premium</h3>
+                </div>
+                <p className="text-white/65 text-sm mb-4 leading-relaxed">
+                  Diseño de luz que transforma ambientes con eficiencia y estilo.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {["World Leds Go"].map((b) => (
+                    <span key={b} className="text-xs font-medium px-2.5 py-1 rounded-full bg-white/10 text-white/80 border border-white/20">
+                      {b}
+                    </span>
+                  ))}
+                </div>
+                <span className="inline-flex items-center gap-2 text-aura-tan font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+                  Conocer más <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
             </Link>
 
-            <Link href="/servicios/redes-conectividad" className="block">
-              <Card className="group hover:shadow-xl transition-all duration-300 border-2 border-aura-tan hover:border-aura-brown hover:bg-white">
-                <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-aura-tan rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-aura-brown transition-colors">
-                    <Wifi className="w-8 h-8 text-white" />
+            {/* Redes — 2/3 width */}
+            <Link
+              href="/servicios/redes-conectividad"
+              className="md:col-span-2 group relative rounded-2xl overflow-hidden h-80 md:h-[420px] flex flex-col justify-end"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-950 to-aura-black">
+                {/* Replace src with real image when available */}
+                <Image
+                  src="/images/nuestros-servicios/hero-wifi-mesh.jpg"
+                  alt="Redes y Conectividad"
+                  fill
+                  className="object-cover opacity-60 group-hover:opacity-75 group-hover:scale-105 transition-all duration-700"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-aura-black/90 via-aura-black/20 to-transparent" />
+              <div className="relative p-7 md:p-8">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-white/10 border border-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Wifi className="w-5 h-5 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-aura-brown mb-4">Redes y Conectividad</h3>
-                  <p className="text-aura-brown mb-6">
-                    WiFi potente y estable en cada rincón de tu casa con tecnología mesh de última generación.
-                  </p>
-                  <Button variant="ghost" className="text-aura-tan hover:text-aura-brown hover:bg-aura-cream">
-                    Saber más →
-                  </Button>
-                </CardContent>
-              </Card>
+                  <h3 className="text-white text-2xl md:text-3xl font-bold">Redes y Conectividad</h3>
+                </div>
+                <p className="text-white/70 text-sm md:text-base mb-4 max-w-md leading-relaxed">
+                  WiFi potente y estable en cada rincón de tu hogar o empresa con tecnología mesh de última generación.
+                </p>
+                <span className="inline-flex items-center gap-2 text-aura-tan font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+                  Conocer más <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
             </Link>
+
           </div>
-
-          {/* Services Details Section */}
         </div>
         </FadeIn>
       </section>
