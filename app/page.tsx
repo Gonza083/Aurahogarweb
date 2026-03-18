@@ -633,14 +633,13 @@ export default function AuraHogarLanding() {
               >
                 Cotización Gratuita
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-aura-brown px-8 bg-transparent font-semibold"
+              <a
+                href="tel:+5493456022800"
+                className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-aura-brown px-8 bg-transparent font-semibold rounded-md h-11 text-sm transition-colors"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Llamar Ahora
-              </Button>
+              </a>
             </div>
           </div>
         </div>
