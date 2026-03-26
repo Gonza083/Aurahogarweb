@@ -3,7 +3,10 @@
     "allow": [
       "Bash(pnpm build:*)",
       "Bash(npx next:*)",
-      "Bash(node node_modules/.bin/next build)"
+      "Bash(node node_modules/.bin/next build)",
+      "Bash(grep -r \"canonicalUrl\\\\|canonical\\\\|og:url\" /c/Users/Paula/Desktop/Projectos-claude/Aurahogarweb/app --include=*.tsx)",
+      "Bash(grep:*)",
+      "Bash(ls:*)"
     ]
   }
 }
