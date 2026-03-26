@@ -1,13 +1,10 @@
-"use client"
-
 import Image from "next/image"
-import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
 import { MapPin, ArrowRight } from "lucide-react"
 import type { Project } from "@/lib/projects"
 
 interface ProjectCardProps {
   project: Project
-  onClick: (project: Project) => void
 }
 
 const TAG_COLORS: Record<string, string> = {
@@ -20,12 +17,12 @@ const TAG_COLORS: Record<string, string> = {
   "Acceso Digital": "bg-rose-50 text-rose-700 border-rose-200",
 }
 
-export default function ProjectCard({ project, onClick }: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   const isFinished = project.status === "finalizado"
 
   return (
-    <button
-      onClick={() => onClick(project)}
+    <Link
+      href={`/proyectos/${project.id}`}
       className="group relative w-full text-left rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aura-tan"
       aria-label={`Ver detalles de ${project.name}`}
     >
@@ -89,6 +86,6 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
           </span>
         ))}
       </div>
-    </button>
+    </Link>
   )
 }

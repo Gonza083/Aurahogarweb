@@ -1,9 +1,8 @@
 "use client"
 
 import { useState, useMemo } from "react"
-import { projects, ALL_TAGS, type Project, type ProjectTag, type ProjectStatus } from "@/lib/projects"
+import { projects, ALL_TAGS, type ProjectTag, type ProjectStatus } from "@/lib/projects"
 import ProjectCard from "@/components/projects/project-card"
-import ProjectModal from "@/components/projects/project-modal"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { MessageCircle } from "lucide-react"
@@ -17,7 +16,6 @@ const STATUS_FILTERS: { value: ProjectStatus | "todos"; label: string }[] = [
 export default function ProjectsClient() {
   const [activeTag, setActiveTag] = useState<ProjectTag | "Todos">("Todos")
   const [activeStatus, setActiveStatus] = useState<ProjectStatus | "todos">("todos")
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
   const filtered = useMemo(() => {
     return projects.filter((p) => {
@@ -34,7 +32,6 @@ export default function ProjectsClient() {
       <main className="min-h-screen bg-aura-cream">
         {/* Page hero */}
         <section className="bg-aura-brown py-20 md:py-28 relative overflow-hidden">
-          {/* Subtle texture overlay */}
           <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_20%_50%,#C6AC8F_0%,transparent_60%),radial-gradient(circle_at_80%_20%,#EAE0D5_0%,transparent_50%)]" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-2xl">
@@ -122,11 +119,7 @@ export default function ProjectsClient() {
                 </p>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                   {filtered.map((project) => (
-                    <ProjectCard
-                      key={project.id}
-                      project={project}
-                      onClick={setSelectedProject}
-                    />
+                    <ProjectCard key={project.id} project={project} />
                   ))}
                 </div>
               </>
@@ -159,8 +152,6 @@ export default function ProjectsClient() {
       </main>
 
       <Footer />
-
-      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
     </>
   )
 }
