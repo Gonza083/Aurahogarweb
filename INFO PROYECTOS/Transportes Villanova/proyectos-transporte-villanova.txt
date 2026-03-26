@@ -1,0 +1,33 @@
+  NOMBRE DEL PROYECTO: Oficinas Villanova
+
+  UBICACIÓN: Chajarí, Entre Ríos
+
+  ESTADO: en-ejecucion
+
+  DESCRIPCIÓN CORTA:
+  Automatización integral de oficinas y galpón para empresa de transporte, con control centralizado desde app móvil.
+
+  DESCRIPCIÓN COMPLETA:
+  Proyecto de domótica comercial para las instalaciones de Transporte Villanova, que integra iluminación inteligente,
+  climatización, portón motorizado y sistema de seguridad avanzado en oficinas y galpón. La plataforma SOPHIA centraliza
+   el control de todos los sistemas sin depender de servidores externos, con alertas en tiempo real y gestión desde el
+  celular. El proyecto abarca tanto el área administrativa como el depósito con cobertura completa de sensores y
+  cámaras.
+
+  TAGS:
+  - Domótica
+  - Iluminación
+  - Seguridad
+  - Climatización
+  - Audio
+  - Acceso Digital
+
+  SOLUCIONES IMPLEMENTADAS:
+  - Iluminación por zonas con escenas y horarios programables
+  - Climatización automatizada por ambientes
+  - Cortinas motorizadas con control por ocupación
+  - Portón de acceso motorizado con control desde celular
+  - Sistema de cámaras de vigilancia con NVR
+  - Sensores PIR y contactos magnéticos en oficinas y galpón
+  - Audio ambiente con parlantes integrados
+  - Automatización de espejo de agua (bomba y circulación)

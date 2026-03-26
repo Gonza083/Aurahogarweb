@@ -1,0 +1,30 @@
+NOMBRE DEL PROYECTO: SF
+
+  UBICACIÓN: Chajarí, Entre Ríos
+
+  ESTADO: finalizado
+
+  DESCRIPCIÓN CORTA:
+  Vivienda con automatización de iluminación, climatización, cortinas, cine, pileta y seguridad con sistema.
+
+  DESCRIPCIÓN COMPLETA:
+  Proyecto de domótica integral para una vivienda con living-cocina-comedor integrado, dormitorio y patio con pileta en Chajarí. El sistema SOPHIA
+  unifica el control de iluminación, cortinas motorizadas, aire acondicionado, cine y pileta desde una sola app. La seguridad está cubierta con
+  cámaras Hikvision, alarma y sensores de presencia integrados al sistema.
+
+  TAGS:
+  - Domótica
+  - Iluminación
+  - Seguridad
+  - Climatización
+  - Audio
+  - Acceso Digital
+
+  SOLUCIONES IMPLEMENTADAS:
+  - Iluminación por zonas con escenas programables
+  - Cortinas motorizadas con control desde app
+  - Control de aire acondicionado por ambientes
+  - Zona de cine con control integrado
+  - Automatización de pileta
+  - Cámaras de vigilancia Hikvision
+  - Alarma con sensores de presencia

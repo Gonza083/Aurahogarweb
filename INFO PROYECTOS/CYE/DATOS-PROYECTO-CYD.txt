@@ -1,0 +1,37 @@
+ NOMBRE DEL PROYECTO: Casa Dell Orto
+
+  UBICACIÓN: Mocorreta, Corrientes
+
+  ESTADO: en-ejecucion
+
+  DESCRIPCIÓN CORTA:
+  Vivienda de 900 m² con iluminación LED por zonas, cortinas motorizadas,
+   seguridad y audio distribuido.
+
+  DESCRIPCIÓN COMPLETA:
+  Proyecto de domótica residencial para una vivienda de 900 m² de planta
+  baja y planta alta en Mocorreta, con iluminación LED integrada en
+  cielorrasos, cortineros y escalones flotantes. El sistema incluye
+  múltiples controladores por zona, sensores de movimiento PIR, cámaras
+  con NVR, intercom con cámara, audio distribuido y control de cortinas
+  motorizadas. Los planos de instalación eléctrica datan de noviembre
+  2022 con una actualización en 2025, con el proyecto en etapa de
+  instalación.
+
+  TAGS:
+  - Domótica
+  - Iluminación
+  - Seguridad
+  - Audio
+  - Acceso Digital
+
+  SOLUCIONES IMPLEMENTADAS:
+  - Iluminación LED por zonas (garganta, cortineros y escalones
+  flotantes)
+  - Cortinas motorizadas con control por zonas
+  - Sensores de movimiento PIR integrados al sistema de alarma
+  - Cámaras de vigilancia con NVR y UPS
+  - Portero con cámara y visor
+  - Audio distribuido por ambientes
+  - Control de TV y dispositivos por infrarrojos
+  - Controladores por ambiente para gestión independiente de cada zona

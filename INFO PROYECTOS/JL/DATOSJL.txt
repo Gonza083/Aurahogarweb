@@ -1,0 +1,32 @@
+NOMBRE DEL PROYECTO: JL
+  
+UBICACIÓN: Chajarí, Entre Ríos
+
+  ESTADO: TERMINADO
+
+  DESCRIPCIÓN CORTA:
+  Vivienda inteligente con control de iluminación, cortinas, climatización, seguridad y audio desde una sola app.
+
+  DESCRIPCIÓN COMPLETA:
+  Proyecto de domótica integral para una residencia sobre Av. 9 de Julio, implementado con el sistema SOPHIA que unifica
+   el control de todos los dispositivos desde una única aplicación. Incluye iluminación por zonas con escenas
+  programables, cortinas motorizadas, climatización por ambientes, cámaras de seguridad, sensores de alarma, portón
+  automatizado y audio distribuido con Spotify integrado. El proyecto se encuentra en etapa de instalación con obras en
+  curso.
+
+  TAGS:
+  - Domótica
+  - Iluminación
+  - Seguridad
+  - Climatización
+  - Audio
+  - Acceso Digital
+
+  SOLUCIONES IMPLEMENTADAS:
+  - Iluminación por zonas con escenas programables
+  - Cortinas motorizadas con control desde app
+  - Climatización por ambientes
+  - Cámaras de vigilancia interior y exterior
+  - Sensores de alarma y movimiento
+  - Portón de acceso automatizado
+  - Audio distribuido con integración Spotify

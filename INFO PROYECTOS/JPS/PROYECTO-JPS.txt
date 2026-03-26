@@ -1,0 +1,29 @@
+  NOMBRE DEL PROYECTO: jps
+
+  UBICACIÓN: Chajarí, Entre Ríos
+
+  ESTADO: en-ejecucion
+
+  DESCRIPCIÓN CORTA:
+  Vivienda inteligente con control de iluminación dimerable, cortinas,
+  climatización, audio.
+
+  DESCRIPCIÓN COMPLETA:
+
+  Proyecto de domótica integral para una residencia en Chajarí,
+  implementado con el sistema SOPHIA. Incluye iluminación con control
+  dimerable en toda la vivienda, cortinas motorizadas, climatización por
+  ambientes, audio distribuido con Spotify.
+
+  TAGS:
+  - Domótica
+  - Iluminación
+  - Climatización
+  - Audio
+
+  SOLUCIONES IMPLEMENTADAS:
+  - Iluminación por zonas con control dimerable
+  - Cortinas motorizadas con programación por horarios
+  - Climatización con control de aire acondicionado por ambientes
+  - Audio distribuido con integración Spotify
+  - Control de aires acondicionado y caldera.

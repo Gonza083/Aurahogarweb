@@ -1,0 +1,28 @@
+  NOMBRE DEL PROYECTO: Edificio INER
+
+  UBICACIÓN: Concepción - Entre Rios
+
+  ESTADO: en-ejecucion
+
+  DESCRIPCIÓN CORTA:
+  Edificio residencial de 60 departamentos con domótica integrada en cada unidad: iluminación, cortinas y climatización.
+
+  DESCRIPCIÓN COMPLETA:
+  Proyecto de domótica a escala edilicia para un edificio residencial de 60 unidades desarrollado por INER Ingeniería, implementado con el sistema
+  SOPHIA en cada departamento. Cada unidad cuenta con iluminación dimerable, cortinas motorizadas, control de aire acondicionado, sensor de
+  presencia y tecla Gaia con alerta antipánico integrada. La solución se adapta a departamentos de 1 y 2 dormitorios con distinto nivel de
+  equipamiento según tipología.
+
+  TAGS:
+  - Domótica
+  - Iluminación
+  - Climatización
+  - Acceso Digital
+
+  SOLUCIONES IMPLEMENTADAS:
+  - Iluminación dimerable por zonas en cada departamento
+  - Cortinas motorizadas con control desde app y botón Gaia
+  - Control de aire acondicionado por ambientes
+  - Sensor de presencia integrado por unidad
+  - Botón Gaia con control de luces, cortinas, temperatura y alerta antipánico
+  - Gestión centralizada por unidad sin dependencia de servidor externo

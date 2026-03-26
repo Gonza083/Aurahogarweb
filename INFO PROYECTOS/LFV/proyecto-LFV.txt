@@ -1,0 +1,33 @@
+NOMBRE DEL PROYECTO: LFV
+ 
+UBICACIÓN: Chajarí, Entre Ríos
+
+  ESTADO: en-ejecucion
+
+  DESCRIPCIÓN CORTA:
+  Vivienda con automatización de iluminación, cortinas, climatización,
+  accesos y riego integrados en el sistema SOPHIA.
+
+  DESCRIPCIÓN COMPLETA:
+  Proyecto de domótica residencial para una vivienda sobre Ruta 3 en
+  Chajarí, con tableros SOPHIA distribuidos para el control de
+  iluminación inteligente por zonas, cortinas motorizadas, climatización
+  con caldera y aire acondicionado, portón automatizado y gestión de
+  pileta y riego. Todo va a poder ser comandado desde una pantalla que va a estar en la zona social de la casa.
+
+  TAGS:
+  - Domótica
+  - Iluminación
+  - Climatización
+  - Acceso Digital
+  - Audio
+  - Redes
+
+  SOLUCIONES IMPLEMENTADAS:
+  - Iluminación por zonas con tiras LED y sensores de movimiento
+  - Cortinas motorizadas con control centralizado
+  - Climatización con caldera, radiadores y aire acondicionado por zonas
+  - Portón de acceso motorizado
+  - Cámaras y sensores de alarma 
+  - Automatización de pileta y riego
+  - Infraestructura de audio distribuido

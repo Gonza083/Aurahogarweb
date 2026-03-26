@@ -1,0 +1,33 @@
+ NOMBRE DEL PROYECTO: NSG
+
+  UBICACIÓN: Chajarí, Entre Ríos
+
+  ESTADO: en-ejecucion
+
+  DESCRIPCIÓN CORTA:
+  Vivienda de alta gama con automatización completa de iluminación, cortinas, accesos, seguridad y climatización.
+
+  DESCRIPCIÓN COMPLETA:
+  Proyecto integral de domótica para una residencia privada sobre calle Rivadavia, con iluminación inteligente
+  distribuida en todas las áreas del hogar, cortinas motorizadas, portones levadizos automatizados y climatización por
+  zonas. La seguridad está cubierta por cámaras y sensores de movimiento integrados al sistema de alarma. Los planos se
+  encuentran en revisión activa (última actualización: marzo 2026), con el proyecto en etapa de instalación.
+
+  TAGS:
+  - Domótica
+  - Iluminación
+  - Seguridad
+  - Climatización
+  - Acceso Digital
+  - Redes
+
+  SOLUCIONES IMPLEMENTADAS:
+  - Iluminación por zonas
+  - Cortinas y persianas motorizadas
+  - Portones levadizos automatizados
+  - Climatización por zonas
+  - Cámaras de vigilancia
+  - Sensores de alarma
+  - Iluminación de pileta y exteriores
+  - Riego automatizado
+  - Red Wi-Fi de cobertura total en toda la vivienda

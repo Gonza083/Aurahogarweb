@@ -1,0 +1,36 @@
+NOMBRE DEL PROYECTO: JS
+
+  UBICACIÓN: Chajarí, Entre Ríos
+
+  ESTADO: en-ejecucion
+
+  DESCRIPCIÓN CORTA:
+  Vivienda de dos plantas con automatización  de iluminación,
+  climatización, cortinas, ingresos, cine, seguridad, audio y pileta.
+
+  DESCRIPCIÓN COMPLETA:
+
+  Proyecto de domótica integral para una residencia nueva de dos plantas
+  sobre calle Repetto, implementado con el sistema SOPHIA. Incluye
+  control de iluminación, cortinas motorizadas, climatización con caldera y aire
+  acondicionado por zonas, dos zonas de cine, cerradura digital y
+  automatización de pileta. 
+
+  TAGS:
+  - Domótica
+  - Iluminación
+  - Seguridad
+  - Climatización
+  - Audio
+  - Acceso Digital
+
+  SOLUCIONES IMPLEMENTADAS:
+  - Iluminación por zonas en planta baja y alta con escenas programables
+  - Cortinas motorizadas con control individual y grupal
+  - Climatización con caldera, zonas de calefacción y aire acondicionado
+  - Sistema de cámaras de vigilancia y sensores de alarma
+  - Cerradura digital con control de acceso
+  - Audio distribuido con integración Spotify
+  - 2 zonas de cine con control integrado
+  - Automatización de pileta 
+  - Control de TV, aires y proyectores

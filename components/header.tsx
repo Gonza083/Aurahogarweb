@@ -159,6 +159,12 @@ export default function Header() {
               )}
             </div>
             <Link
+              href="/nosotros"
+              className="text-aura-brown hover:text-aura-tan transition-colors font-medium"
+            >
+              Nosotros
+            </Link>
+            <Link
               href="/proyectos"
               className="text-aura-brown hover:text-aura-tan transition-colors font-medium"
             >
@@ -243,6 +249,13 @@ export default function Header() {
                   </div>
                 )}
               </div>
+              <Link
+                href="/nosotros"
+                className="text-aura-brown hover:text-aura-tan transition-colors font-medium py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Nosotros
+              </Link>
               <Link
                 href="/proyectos"
                 className="text-aura-brown hover:text-aura-tan transition-colors font-medium py-2"
