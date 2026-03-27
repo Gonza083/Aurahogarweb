@@ -50,7 +50,7 @@ export default function ProjectsClient() {
         </section>
 
         {/* Filters */}
-        <section className="bg-white border-b border-aura-tan/20 sticky top-16 z-30 shadow-sm">
+        <section className="bg-white border-b border-aura-tan/20 shadow-sm">
           <div className="container mx-auto px-4 py-4">
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               {/* Tag filters */}
