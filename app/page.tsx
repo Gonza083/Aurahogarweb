@@ -27,6 +27,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Footer from "@/components/footer"
 import FadeIn from "@/components/fade-in"
+import { projects } from "@/lib/projects"
 
 export default function AuraHogarLanding() {
   const scrollToSection = (sectionId: string) => {
@@ -540,61 +541,43 @@ export default function AuraHogarLanding() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
-            {[
-              {
-                src: "/images/projects/casa-fd-chajari.jpg",
-                alt: "Casa Inteligente FD – Chajarí",
-                name: "Casa Inteligente FD",
-                status: "Finalizado",
-                statusColor: "bg-emerald-500/90 border-emerald-400/50",
-                tags: ["Domótica", "Seguridad", "Iluminación"],
-              },
-              {
-                src: "/images/projects/proyecto-ng.jpg",
-                alt: "Proyecto NG – Chajarí",
-                name: "Proyecto NG",
-                status: "En Ejecución",
-                statusColor: "bg-aura-tan/90 border-aura-tan/50",
-                tags: ["Domótica", "Redes", "Audio"],
-              },
-              {
-                src: "/images/projects/oficinas-inteligentes.jpg",
-                alt: "Oficinas Inteligentes – Chajarí",
-                name: "Oficinas Inteligentes",
-                status: "En Ejecución",
-                statusColor: "bg-aura-tan/90 border-aura-tan/50",
-                tags: ["Domótica", "Seguridad", "Acceso Digital"],
-              },
-            ].map((item) => (
-              <Link key={item.name} href="/proyectos" className="group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-                <div className="relative h-60 overflow-hidden">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-aura-black/75 via-aura-black/10 to-transparent" />
-                  <div className="absolute top-3 right-3">
-                    <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold backdrop-blur-sm border text-white ${item.statusColor}`}>
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/80" />
-                      {item.status}
-                    </span>
+            {projects.slice(0, 3).map((project) => {
+              const isFinished = project.status === "finalizado"
+              const statusLabel = isFinished ? "Finalizado" : "En Ejecución"
+              const statusColor = isFinished
+                ? "bg-emerald-500/90 border-emerald-400/50"
+                : "bg-aura-tan/90 border-aura-tan/50"
+              return (
+                <Link key={project.id} href={`/proyectos/${project.id}`} className="group block rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                  <div className="relative h-60 overflow-hidden">
+                    <Image
+                      src={project.mainImage}
+                      alt={`${project.name} – ${project.location}`}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-aura-black/75 via-aura-black/10 to-transparent" />
+                    <div className="absolute top-3 right-3">
+                      <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold backdrop-blur-sm border text-white ${statusColor}`}>
+                        <span className="w-1.5 h-1.5 rounded-full bg-white/80" />
+                        {statusLabel}
+                      </span>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 p-4">
+                      <p className="text-white font-bold text-lg">{project.name}</p>
+                    </div>
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <p className="text-white font-bold text-lg">{item.name}</p>
+                  <div className="bg-white px-4 py-3 flex flex-wrap gap-1.5">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="text-xs font-medium px-2.5 py-1 rounded-full bg-aura-cream text-aura-brown border border-aura-tan/30">
+                        {tag}
+                      </span>
+                    ))}
                   </div>
-                </div>
-                <div className="bg-white px-4 py-3 flex flex-wrap gap-1.5">
-                  {item.tags.map((tag) => (
-                    <span key={tag} className="text-xs font-medium px-2.5 py-1 rounded-full bg-aura-cream text-aura-brown border border-aura-tan/30">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </Link>
-            ))}
+                </Link>
+              )
+            })}
           </div>
 
           <div className="text-center">
